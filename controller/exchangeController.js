@@ -7,9 +7,7 @@ exports.getAll = async (req, res) => {
 
   const exchanges = await exchangeModel.getAllExchanges();
 
-  res.status(200).json({
-    exchanges,
-  });
+  res.status(200).json({ data: exchanges });
 };
 
 exports.test = async (req, res) => {

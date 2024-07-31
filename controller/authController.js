@@ -12,7 +12,6 @@ exports.logUser = async (req, res) => {
   const user = await userModel.getAllUser();
 
   res.status(200).json({
-    message: "모든 유저",
     user,
   });
 };
